@@ -1,54 +1,11 @@
-# React + TypeScript + Vite
+Как это работает:
+1.  Выбор уровня клиента:
+В выпадающем списке укажите свой текущий уровень в программе лояльности(Кешбэк) (стандартный, повышенный). Для каждого уровня действуют свои базовые ставки и дополнительные условия.
+2.Подбор категорий (до 4-х):
+Отметьте чекбоксами до четырёх категорий трат (Duty Free, Аптеки, Фитнес и др.). Рядом с названием каждой категории отображается процент кэшбэка, который вы получите при совершении покупок в рамках ежемесячного лимита.
+3.Поиск по MCC:
+Если нужной категории нет в списке, введите MCC-код торговой точки или её название — калькулятор автоматически определит подходящую категорию и применит к ней вашу ставку.
+4.Расчёт по сумме покупок: 
+В поле “Сумма” укажите планируемый объём трат в выбранной категории, затем нажмите «Рассчитать кэшбэк». Калькулятор учтёт, достигнуты ли лимиты, и предложит итоговый перечень начислений по каждой категории и общий возврат за месяц.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+https://licashbackcalcvnh.web.app
