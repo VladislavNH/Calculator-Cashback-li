@@ -1,0 +1,64 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--ozon-blue);
+}
+
+.checkbox {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.name {
+  flex: 1;
+  color: var(--text-default);
+}
+
+.rateBadge {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ozon-blue);
+  background: rgba(0, 82, 204, 0.1);
+  border: 1px solid var(--ozon-blue);
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.card:hover .rateBadge {
+  background: rgba(0, 82, 204, 0.15);
+}
+
+.checked {
+  background: rgba(0, 82, 204, 0.05);
+  border-color: var(--ozon-blue);
+}
+
+.checked .rateBadge {
+  background: var(--ozon-blue);
+  color: #fff;
+}
+
+.footer {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}

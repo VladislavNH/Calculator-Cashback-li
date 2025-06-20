@@ -1,0 +1,85 @@
+@import './styles/vars.scss';
+
+.appWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 24px;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--card-bg);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-default);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 24px;
+  & > label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  & > select,
+  & > input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px 18px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  & > select:focus,
+  & > input:focus {
+    border-color: var(--ozon-blue);
+    box-shadow: 0 0 4px rgba(0,82,204,0.15);
+    outline: none;
+  }
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--ozon-blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+.button:hover {
+  background: #0042A8;
+  box-shadow: 0 8px 24px rgba(0,82,204,0.3);
+}
+.button:active {
+  transform: scale(0.97);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8);}
+  to   { opacity: 1; transform: scale(1);}
+}

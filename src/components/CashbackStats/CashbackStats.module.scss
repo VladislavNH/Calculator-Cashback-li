@@ -1,0 +1,40 @@
+.stats {
+    margin-top: 24px;
+    font-family: Inter, sans-serif;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  
+  .name {
+    flex: 1;
+    color: var(--text-default);
+  }
+  
+  .rate {
+    margin: 0 12px;
+    font-weight: 600;
+    color: var(--ozon-accent);
+  }
+  
+  .sum {
+    font-weight: 600;
+    color: var(--text-default);
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
